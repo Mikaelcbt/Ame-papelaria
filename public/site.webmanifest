@@ -1,0 +1,17 @@
+{
+  "name": "AME Papelaria",
+  "short_name": "AME",
+  "description": "Papelaria premium em Salvador desde 1998.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#262c7c",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
