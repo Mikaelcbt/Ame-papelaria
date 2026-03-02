@@ -166,7 +166,7 @@ export const Hero: React.FC = () => {
                 
                 {/* Floating Detail Badge */}
                 <div className="absolute top-10 right-10 bg-yellow-400 p-6 rounded-3xl shadow-2xl flex flex-col items-center justify-center text-blue-950 font-black rotate-12 group-hover:rotate-6 transition-transform duration-500">
-                  <span className="text-xs uppercase tracking-widest opacity-70">Desde 1998</span>
+                  <span className="text-xs uppercase tracking-widest opacity-70">Desde 1994</span>
                   <span className="text-2xl tracking-tighter">PREMIUM</span>
                 </div>
               </div>

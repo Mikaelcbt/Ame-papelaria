@@ -30,16 +30,29 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <Logo variant="light" className="h-12" />
             </div>
             <p className="text-sm leading-relaxed">
-              Transformando sua rotina com variedade e carinho. O melhor da papelaria em Salvador desde 1998.
+              Transformando sua rotina com variedade e carinho. O melhor da papelaria em Salvador desde 1994.
             </p>
             <div className="flex gap-4">
-              <a href="#!" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all">
+              <a 
+                href={CONTACT_INFO.instagram} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#!" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all">
+              <a 
+                href={CONTACT_INFO.facebook} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#!" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all">
+              <a 
+                href={`mailto:${CONTACT_INFO.email}`}
+                className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all"
+              >
                 <Mail className="w-5 h-5" />
               </a>
             </div>

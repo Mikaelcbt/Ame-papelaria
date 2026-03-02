@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Search, MessageSquare, Menu, X } from 'lucide-react';
+import { Search, MessageSquare, Instagram, Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
 import { CONTACT_INFO } from '../constants';
 import { Page } from '../App';
@@ -67,7 +67,17 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 md:gap-4">
+          <a 
+            href={CONTACT_INFO.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-wider hover:bg-blue-800 transition-all shadow-lg shadow-blue-900/20"
+          >
+            <Instagram className="w-4 h-4" />
+            Instagram
+          </a>
+
           <a 
             href={CONTACT_INFO.whatsappLink}
             target="_blank"
@@ -101,14 +111,27 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
               {link.name}
             </a>
           ))}
-          <a 
-            href={CONTACT_INFO.whatsappLink}
-            onClick={handleWhatsAppClick}
-            className="w-full bg-green-500 text-white p-6 rounded-3xl font-black text-xl flex items-center justify-center gap-4 shadow-xl"
-          >
-            <MessageSquare className="w-6 h-6" />
-            WhatsApp
-          </a>
+          <div className="flex flex-col gap-4">
+            <a 
+              href={CONTACT_INFO.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-blue-900 text-white p-6 rounded-3xl font-black text-xl flex items-center justify-center gap-4 shadow-xl"
+            >
+              <Instagram className="w-6 h-6" />
+              Instagram
+            </a>
+            <a 
+              href={CONTACT_INFO.whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
+              className="w-full bg-green-500 text-white p-6 rounded-3xl font-black text-xl flex items-center justify-center gap-4 shadow-xl"
+            >
+              <MessageSquare className="w-6 h-6" />
+              WhatsApp
+            </a>
+          </div>
         </div>
       </div>
     </header>

@@ -9,7 +9,10 @@ export const CONTACT_INFO = {
   phone: "(71) 3248-7835",
   whatsapp: "(71) 98359-2706",
   whatsappLink: "https://wa.me/5571983592706",
-  location: "Salvador - BA"
+  location: "Salvador - BA",
+  facebook: "https://www.facebook.com/profile.php?id=61587115321595",
+  instagram: "https://www.instagram.com/amepapelaria_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  email: "contato@amepapelaria.com.br"
 };
 
 export const BENEFITS: Benefit[] = [
